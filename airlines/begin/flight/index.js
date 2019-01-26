@@ -14,7 +14,9 @@ var Flight = function() {
             }
         }
     };
-
+    this.triggerArrive = function () {
+        this.data.actualArrive = Date.now();
+    };
     this.getInfo = () => this.data;
 };
 //Factory patern
